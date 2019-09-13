@@ -1,5 +1,17 @@
 import React from 'react';
 import './App.css';
+import StarWarsList from "./components/StarWarsList";
+import styled from "styled-components";
+import Pagination from "./components/Pagination";
+
+const Font = styled.div`
+font-size: ${props =>(props.primary ? `3.5rem` : `.8rem`)};
+color: #fff;
+display: flex;
+background: #2C8CD0;
+border: 2px solid #413539;
+
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +23,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <Pagination />
+      <StarWarsList />
     </div>
   );
 }
