@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import StarWarsList from "./components/StarWarsList";
 import styled from "styled-components";
+import Pagination from "./components/Pagination";
 
 const Font = styled.div`
 font-size: ${props =>(props.primary ? `3.5rem` : `.8rem`)};
@@ -22,7 +23,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Font primary>React Wars</Font>
+      <Pagination />
       <StarWarsList />
     </div>
   );
