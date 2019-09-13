@@ -9,27 +9,32 @@ background: #2C8CD0;
 border: 2px solid #413539;
 display: flex;
 border-radius: 15px 50px;
+justify-content: space-between;
 `;
 
 const Columns = styled.div`
 display: flex;
 flex-direction: column;
-align-content: ${props =>(props.primary ? `center` : `flex-end`)};
-align-items: ${props =>(props.primary ? `center` : `flex-end`)};
+justify-content: center;
 padding: 20px;
+
 `;
 
 const Font = styled.div`
-font-size: ${props =>(props.primary ? `2rem` : `.8rem`)};
+font-size: ${props =>(props.primary ? `2rem` : `1.0rem`)};
 color: #fff;
 display: flex;
+align-items: center;
+padding-bottom: ${props =>(props.primary ? `30px` : `20px`)};
 `;
 
 const PicBox = styled.div`
-width: 100px;
-height: 100px;
+width: 200px;
+height: 200px;
 background: #A9A1A6;
 padding: 10px;
+border: 2px solid #413539;
+border-radius: 15px 30px;
 `;
 
 const StarWarsCard = props =>{

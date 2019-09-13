@@ -3,6 +3,7 @@ import axios from "axios";
 import StarWarsCard from "./StarWarsCard";
 
 
+
 export default function StarWarsList(){
     
     //useState, initial value of an empty array and then setUseState to the response.data.results to loop over
@@ -13,7 +14,7 @@ export default function StarWarsList(){
     useEffect(() =>{
         axios.get(`https://swapi.co/api/people/`)
         .then(response =>{
-            // console.log(`This is the result from the API`, response);
+            console.log(`This is the result from the API`, response);
             // console.log(`This is the type of API - response`,typeof response);
             // console.log(`This is the result from response.data`, response.data);
             // console.log(`This is the type of response.data`,typeof response.data);
@@ -32,7 +33,6 @@ export default function StarWarsList(){
 
     return (
         <div>
-            <div>Hello Worlds!</div>
             {people.map(person =>{
                 return(
                     <StarWarsCard
