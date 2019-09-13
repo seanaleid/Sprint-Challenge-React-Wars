@@ -37,6 +37,13 @@ export default function StarWarsList(){
                 return(
                     <StarWarsCard
                     name={person.name}
+                    birth_year={person.birth_year}
+                    gender={person.gender}
+                    height={person.height}
+                    mass={person.mass}
+                    hair_color={person.hair_color}
+                    eye_color={person.eye_color}
+                    skin_color={person.skin_color}
                     />
                 )
             })}
